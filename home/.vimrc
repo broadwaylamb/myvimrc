@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-surround'
 Plug 'machakann/vim-highlightedyank'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 call plug#end()
 
