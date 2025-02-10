@@ -1,3 +1,4 @@
 source ~/.vimrc
+Plug 'terryma/vim-multiple-cursors'
 
 clipboard+=unnamed

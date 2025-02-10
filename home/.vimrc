@@ -16,4 +16,8 @@ set incsearch
 set hlsearch
 set scrolloff=10
 
+# Show the think cursor in INSERT mode
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
 "mappings
