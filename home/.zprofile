@@ -5,16 +5,12 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='code'
-else
-  export EDITOR='vim'
-fi
+export EDITOR='vim'
 
 alias zshconfig="code ~/.zprofile"
 
 # Added by Toolbox App
-export PATH="$PATH:/Users/Sergej.Jaskiewicz/Library/Application Support/JetBrains/Toolbox/scripts"
+export PATH="$PATH:$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
@@ -29,7 +25,7 @@ export JDK_21_0=`/usr/libexec/java_home -v 21`
 export JAVA_HOME=$JDK_17_0
 
 # Useful scripts for Kotlin compiler development https://github.com/Kotlin/kotlin-dev-tools
-export PATH="/Users/Sergej.Jaskiewicz/Developer/kotlin-dev-tools/bin:$PATH"
+export PATH="$HOME/Developer/kotlin-dev-tools/bin:$PATH"
 
 if type brew &>/dev/null; then
     FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
