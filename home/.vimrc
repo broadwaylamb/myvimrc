@@ -14,7 +14,6 @@ let g:highlightedyank_highlight_duration = 300
 
 set incsearch
 set hlsearch
-set scrolloff=10
 
 "Show the think cursor in INSERT mode
 let &t_SI = "\e[6 q"
